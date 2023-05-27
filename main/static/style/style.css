@@ -1,0 +1,35 @@
+:root {
+	--box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 45px;
+}
+
+.card {
+	box-shadow: var(--box-shadow);
+}
+
+.card__img {
+	width: 100%;
+	height: 210px;
+	object-fit: cover;
+}
+
+.card__title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+/* Article */
+
+.a__img {
+	width: 100%;
+	height: 270px;
+	object-fit: cover;
+}
